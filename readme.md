@@ -1,6 +1,8 @@
 # High Availability (HA) Setup with Docker, HAProxy, and Node.js
 
-This project demonstrates a simple **High Availability (HA)** setup using Docker, HAProxy, and Node.js. It includes:
+This project demonstrates a simple **High Availability (HA)** setup using Docker, HAProxy, and Node.js. 
+
+It includes:
 - Two Node.js web servers (`web1` and `web2`) that dynamically generate and display a UUID.
 - An HAProxy load balancer that distributes traffic between the two web servers.
 
@@ -17,6 +19,8 @@ This project demonstrates a simple **High Availability (HA)** setup using Docker
 Before you begin, ensure you have the following installed:
 - [Docker](https://docs.docker.com/get-docker/)
 - [Docker Compose](https://docs.docker.com/compose/install/)
+
+Docker Desktop for Windows will install both docker and docker-compose.
 
 ---
 
