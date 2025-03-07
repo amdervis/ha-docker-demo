@@ -3,13 +3,13 @@
 This project demonstrates a simple **High Availability (HA)** setup using Docker, HAProxy, and Node.js. 
 
 It includes:
-- Two Node.js web servers (`web1` and `web2`) that dynamically generate and display a UUID.
+- Two Node.js web servers (`app1` and `app2`) that dynamically generate and display a UUID.
 - An HAProxy load balancer that distributes traffic between the two web servers.
 
 ---
 
 ## **Features**
-- **Load Balancing**: HAProxy distributes incoming traffic between `web1` and `web2`.
+- **Load Balancing**: HAProxy distributes incoming traffic between `app1` and `app2`.
 - **Dynamic Content**: Each web server generates a unique UUID for every request.
 - **Dockerized**: All components are containerized using Docker for easy setup and testing.
 
