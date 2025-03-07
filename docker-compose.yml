@@ -1,0 +1,26 @@
+services:
+  # Load Balancer (HAProxy)
+  haproxy:
+    image: haproxy:latest
+    container_name: haproxy
+    ports:
+      - "80:80"
+    volumes:
+      - ./config/haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg
+    depends_on:
+      - app1
+      - app2
+
+  # Web Server 1 (Node.js)
+  app1:
+    build: ./app/1
+    container_name: app1
+    expose:
+      - "80"
+
+  # Web Server 2 (Node.js)
+  app2:
+    build: ./app/2
+    container_name: app2
+    expose:
+      - "80"
